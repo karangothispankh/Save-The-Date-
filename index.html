@@ -197,9 +197,37 @@ body {
   animation:ganpatiFloat 4s ease-in-out infinite;
 }
 
-.quote { font-size:0.85rem; margin-bottom:25px; font-style:italic; }  
-.script { font-family:'Great Vibes'; font-size:2.8rem; }  
-.parents { font-size:0.7rem; letter-spacing:2px; color:#8a7a65; }  
+.quote {
+ font-size:0.85rem;
+ margin-bottom:25px;
+ font-style:italic;
+}
+
+.script{
+ font-family:'Great Vibes';
+ font-size:2.8rem;
+ line-height:1.1;
+}
+
+.groom-name{
+ font-size:2.45rem;
+}
+
+@media(max-width:420px){
+ .script{
+   font-size:2.35rem;
+ }
+
+ .groom-name{
+   font-size:2.1rem;
+ }
+}
+
+.parents{
+ font-size:0.7rem;
+ letter-spacing:2px;
+ color:#8a7a65;
+}
 
 .swipe {  
   position:absolute;  
@@ -507,12 +535,13 @@ canvas {
       — Guru Amar Das Ji
     </div>
 
-    <div class="script ring">Karan</div>
-    <div class="parents">SON OF MR. & MRS. SANAP</div>
-
     <div class="script ring">Pankti</div>
-    <div class="parents">DAUGHTER OF MR. & MRS. JHAVERI</div>
-  </div>
+<div class="parents">DAUGHTER OF MR. & MRS. JHAVERI</div>
+
+<div style="height:18px;"></div>
+
+<div class="script ring groom-name">Karan</div>
+<div class="parents">SON OF MR. & MRS. SANAP</div>
 
   <div class="swipe" onclick="scrollNext()">SWIPE ↓</div>
 </div>
