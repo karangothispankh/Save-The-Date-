@@ -458,6 +458,28 @@ canvas {
   animation:megaBurst 2.4s forwards;
 }
 
+.invite-card{
+  display:flex;
+  flex-direction:column;
+}
+
+/* reorder elements visually (WITHOUT touching HTML) */
+.invite-card > div:nth-child(3){
+  order: 2; /* Karan name */
+}
+
+.invite-card > div:nth-child(4){
+  order: 3;
+}
+
+.invite-card > div:nth-child(5){
+  order: 0; /* Pankti name goes up */
+}
+
+.invite-card > div:nth-child(6){
+  order: 1;
+}
+
 @keyframes megaBurst{
   0%{
     transform:translate(0,0) scale(1);
